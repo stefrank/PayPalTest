@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Frames v2</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" href="./mdlor.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+  integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+  crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
+</head>
+
+<body>
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=Adegx2Cb7V-S0TJnOMsGplcPv8firiuFu6E8C-NTF2vMhhjFsKLU_zxkaRM33aOZnsuHTMY-P19D-5Lo"> // Required. Replace YOUR_CLIENT_ID with your sandbox client ID.
+  </script>
+  
+  <div class="col-xs-2"></div>
+  <div class="col-xs-8">
+    <!-- nav bar -->
+    <ul class="nav nav-tabs nav-inverse text-right">
+      <li><img src="https://airwallex.stgin.com/static/version1621243467/frontend/Magento/luma/en_US/images/logo.svg"
+          style="width:120px; padding:5px;" alt=""></li>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">SHOP</a></li>
+      <li><a href="#">DISCLAIMIER</a></li>
+      <li><a href="#">ABOUT US</a></li>
+    </ul>
+    <br>
+    <ul class="breadcrumb">
+      <li><a href="#">Cart</a></li>
+      <li><a href="#">Shipping</a></li>
+      <li class="active">Payment</li>
+    </ul>
+    <br>
+    <!-- Payment Info and Frame -->
+    <div class="col-xs-6">
+      <form id="payment-form" method="POST" action="https://merchant.com/charge-card" role="form">
+        <h4>Buyer's Information:</h4>
+        <div id="firstnamediv" class="form-group">
+          <input type="text" value="Frank" class="form-control" id="firstname" placeholder="First Name">
+        </div>
+        <div id="lastnamediv" class="form-group">
+          <input type="text" value="Feng" class="form-control" id="lastname" placeholder="Last Name">
+        </div>
+        <div id="emaildiv" class="form-group">
+          <input type="text" value="frank.feng@gmail.com" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div id="phonediv" class="form-group">
+          <input type="text" value="17143892272" class="form-control" id="phone" placeholder="Phone Number">
+        </div>
+        <h4>Shipping Address:</h4>
+        <div id="countrydiv" class="form-group">
+          <input type="text" value="US" class="form-control" id="country" placeholder="Country">
+        </div>
+        <div id="statediv" class="form-group">
+          <input type="text" value="CA" class="form-control" id="state" placeholder="State">
+        </div>
+        <div id="zipdiv" class="form-group">
+          <input type="text" value="92688" class="form-control" id="zip" placeholder="Zip Code">
+        </div>
+        <div id="citydiv" class="form-group">
+          <input type="text" value="Rancho Santa Margarita" class="form-control" id="city" placeholder="City">
+        </div>
+        <div id="streetdiv" class="form-group">
+          <input type="text" value="2650 Maple Street" class="form-control" id="street" placeholder="Street">
+        </div>
+        <h4>Payment:</h4>
+        <div class="form-group">
+          <!-- progress bar -->
+          <div id="progressBar" style="display: none;" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+          <!-- add PayPal button -->
+          <div id="paypal-button-container"></div>
+        </div>
+        <p class="success-payment-message"></p>
+      </form>
+    </div>
+    <!-- Order Summery -->
+    <div class="col-xs-6">
+      <h4>Order Summary:</h4>
+      <div class="row">
+        <div class="media col-xs-6">
+          <div class="media-left">
+            <img
+              src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimgservice.suning.cn%2Fuimg1%2Fb2c%2Fimage%2FwxX0-eO21MY4WNRPFiF8Ag.jpg_200w_200h_4e&refer=http%3A%2F%2Fimgservice.suning.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1623768708&t=78e2ca4177d71c2599f50a908b74ed57"
+              class="media-object" style="width:66px">
+          </div>
+          <div class="media-body" style="vertical-align: middle;">
+            <h4 class="media-heading">iPhone XS * 1</h4>
+          </div>
+        </div>
+
+        <div class="col-xs-6">
+          <h5>$2</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <h5>Shipping</h5>
+        </div>
+        <div class="col-xs-6">
+          <h5>$1</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <h5>Total</h5>
+        </div>
+        <div class="col-xs-6">
+          <h5>$3</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-2"></div>
+
+
+  <script>
+    paypal.Buttons({
+      createOrder: function() {
+        // call server end Create Order API
+        return fetch('/createorder?firstname=' + $("#firstname").val() + '&lastname=' + $("#lastname").val() + '&email=' + $("#email").val() + '&phone=' + $("#phone").val() + '&country=' + $("#country").val() + '&street=' + $("#street").val() + '&zip=' + $("#zip").val() + '&city=' + $("#city").val() + '&state=' + $("#state").val(), {
+          method: 'get',
+        }).then(function(res) {
+          return res.json();
+        }).then(function(data) {
+          return data.orderID; 
+        });
+    },
+    onApprove: function(data, actions) {
+      // call server end Capture Order API
+      return fetch('/captureorder?orderID=' + data.orderID, {
+        method: 'get',
+      }).then(function(res) {
+        return res.json();
+      }).then(function(details) {
+        window.location.href='/success?orderId=' + details.orderId;
+      })
+    }
+  }).render('#paypal-button-container');
+  //This function displays Smart Payment Buttons on your web page.
+</script>
+
+  </script>
+</body>
+
+</html>

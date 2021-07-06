@@ -1,0 +1,50 @@
+{
+    "id": "6a870944-3021-4d9a-9f5a-dd5c44a0c203",
+    "name": "checkout.com test",
+    "description": "",
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [
+        "351dc41f-8d66-4fb2-ba05-e95a9c4d69cc"
+    ],
+    "folders_order": [],
+    "protocolProfileBehavior": {},
+    "folders": [],
+    "requests": [
+        {
+            "id": "351dc41f-8d66-4fb2-ba05-e95a9c4d69cc",
+            "name": "Pay ",
+            "url": "https://integrations-cko.herokuapp.com/pay3d",
+            "description": "",
+            "data": [],
+            "dataOptions": {
+                "raw": {
+                    "language": "json"
+                }
+            },
+            "dataMode": "raw",
+            "headerData": [
+                {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "description": "",
+                    "type": "text"
+                }
+            ],
+            "method": "POST",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6a870944-3021-4d9a-9f5a-dd5c44a0c203",
+            "rawModeData": "{\n    \"token\": \"{{cardToken}}\",\n    \"success_url\": \"https://google.com/success\",\n    \"failure_url\": \"https://google.com/fail\"\n}",
+            "headers": "Content-Type: application/json\n",
+            "pathVariables": {}
+        }
+    ]
+}

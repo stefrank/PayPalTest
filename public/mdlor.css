@@ -1,0 +1,135 @@
+.paddingtop10 {
+    padding-top: 10px;
+}
+
+.paddingtop50 {
+    padding-top: 50px;
+}
+.paddingtop100 {
+    padding-top: 100px;
+}
+.paddingleft {
+    padding-left: 15px;
+}
+.paddingright {
+    padding-right: 15px;
+}
+.verticalmiddle {
+    vertical-align: middle;
+}
+.progressbar {
+    font-size: 100;
+    width: 100;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;   
+}
+/* .mdl-cell {
+    height: 30px;
+    width: 20%;
+} 
+.mdl-text {
+    font-size: 3px;
+} 
+.mdl-layout__header {
+    height: 30px;
+} */
+/* .mdl-textfield {
+    font-size:8px;
+} */
+/* .mdl-cell--padding {
+padding-left: 30px;
+/* padding-right: 30px; */
+
+
+/* .mdl-textfield {
+    padding:10px;
+}
+.mdl-textfield__label {
+   top:4px;
+}
+.mdl-textfield__label:after {
+    bottom: 10px;
+} */
+
+/* .mdl-grid:after{
+    bottom: 0px;
+}
+.mdl-grid:before{
+    bottom: 0px;
+} */
+.container{
+    padding-top: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;  
+}
+.mdl-spinner{
+    font-size: 100px;
+}
+/* .mdl-mini-footer{
+    position:absolute;
+    bottom:0px;
+    width: 100%;
+    height: 0px;
+} */
+
+#detailsTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#detailsTable td,
+#detailsTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#detailsTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#detailsTable tr:hover {
+    background-color: #ddd;
+}
+
+#detailsTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(233, 233, 233);
+    /* color: white;*/
+}
+.mdl-navigation__help{
+    color: white;
+}
+.col-center-block {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center{
+    text-align: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;  
+}
+.mdl-spinner{
+    width:60px;
+    height: 60px;
+}
+.mdl-spinner__circle{
+    border-width: 5px;
+}
+.mdl-data-table--center{
+    width:auto;
+    margin-left: auto;
+    margin-right: auto;  
+}
+.mdl-button{
+    text-transform: none;
+}
+

@@ -1,0 +1,34 @@
+{
+    "info": {
+        "_postman_id": "6a870944-3021-4d9a-9f5a-dd5c44a0c203",
+        "name": "checkout.com test",
+        "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Pay ",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "name": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"token\": \"{{cardToken}}\",\n    \"success_url\": \"https://google.com/success\",\n    \"failure_url\": \"https://google.com/fail\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": "https://integrations-cko.herokuapp.com/pay3d"
+            },
+            "response": []
+        }
+    ]
+}
